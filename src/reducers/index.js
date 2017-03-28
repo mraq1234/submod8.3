@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import countriesReducer  from './countries-reducer';
+import countries  from './countries-reducer';
 
 const reducers = combineReducers({
-    countriesReducer
+    countries
 });
 
 export default reducers;
