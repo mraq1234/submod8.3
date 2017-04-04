@@ -1,12 +1,12 @@
 import React from 'react';
 import { Route, IndexRoute } from 'react-router';
-import Navigation from './presentationals/navigation.component';
-import Home from './presentationals/home.component';
-import Contact from './presentationals/contact.component';
-import NotFound from './presentationals/not-found.component';
-import CountryFlagContainer from './containers/flag-container.component';
-import CountryDetailsContainer from './containers/country-detail-container.component';
-import ContinentsContainer from './containers/continents-container.component';
+import Navigation from './components/Navigation';
+import Home from './components/Home';
+import Contact from './components/Contact';
+import NotFound from './components/NotFound';
+import CountryFlagContainer from './containers/CountryListContainer';
+import CountryDetailsContainer from './containers/CountryDetailContainer';
+import ContinentsContainer from './containers/ContinentListContainer';
 
 export default (
     <Route path='/' component={Navigation}>

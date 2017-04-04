@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import '../country.css';
 
-const Navigation = props => (
+const Navigation = ({children}) => (
     <div>
         <nav className="navbar navbar-default">
             <div className="container-fluid">
@@ -21,7 +21,7 @@ const Navigation = props => (
             </div>
         </nav>
         <div className="container-fluid">
-            {props.children}
+            {children}
         </div>
     </div>
 );
