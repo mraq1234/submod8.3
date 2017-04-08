@@ -17,6 +17,7 @@ export function searchCountries(searchText) {
 }
 
 export function setContinent(name) {
+  debugger;
   return {
     type: SET_CONTINENT,
     name

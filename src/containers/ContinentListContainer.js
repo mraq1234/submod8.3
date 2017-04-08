@@ -1,19 +1,17 @@
 import { connect } from 'react-redux';
-import { setContinent, deleteCountry } from '../actions';
-import { getCountriesByContinent } from '../reducers/countries';
+import { deleteCountry } from '../actions';
+import { filterCountries } from '../reducers/countries';
 import ContinentList from '../components/ContinentList';
 
 const mapStateToProps = function (store) {
   return {
-    countries: getCountriesByContinent(store.countries, store.selectedContinent),
-    selectedContinent: store.selectedContinent
+    countries: filterCountries(store.countries, "continent", store.selectedContinent)
   };
 };
 
 const mapDispatchToProps = function (dispatch) {
   return {
-    deleteCountry: id => dispatch(deleteCountry(id)),
-    setContinent: continent => dispatch(setContinent(continent))
+    deleteCountry: id => dispatch(deleteCountry(id))
   };
 };
 
