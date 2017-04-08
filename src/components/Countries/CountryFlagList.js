@@ -1,6 +1,6 @@
 import React from 'react';
 import CountryItem from './CountryItem';
-import '../country.css';
+import '../../country.css';
 
 
 

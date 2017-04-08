@@ -1,6 +1,6 @@
 import React from 'react';
 import SelectContinent from '../containers/SelectContinentContainer';
-import CountryFlagList from './CountryFlagList';
+import CountryFlagList from './Countries/CountryFlagList';
 import '../country.css';
 
 const ContinentList = props => {

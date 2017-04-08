@@ -1,5 +1,5 @@
 import React from 'react';
-import '../country.css'
+import '../../country.css'
 
 const CountryFlag = ({imageUrl}) => (
     <div className="country-logo-wrapper">

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router';
 import CountryFlag from './CountryFlag'
-import '../country.css'
+import '../../country.css'
 
 const CountryItem = ({country, deleteCountry}) => (
   <div className="single-country" key={country.id}>

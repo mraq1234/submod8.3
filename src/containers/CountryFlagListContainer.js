@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import CountryFlagList from '../components/CountryFlagList';
+import CountryFlagList from '../components/Countries/CountryFlagList';
 import { deleteCountry } from '../actions'
 import { filterCountries } from '../reducers/countries'
 

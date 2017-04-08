@@ -1,8 +1,7 @@
 import React from 'react';
 import '../country.css';
 
-const CountryDetails = ({country}) => {
-  const {imageUrl, name, continent, populace, capital, currency} = country;
+const CountryDetails = ({country: { imageUrl, name, continent, populace, capital, currency }}) => {
 
   return (<div className="country-wrapper">
     <header>
