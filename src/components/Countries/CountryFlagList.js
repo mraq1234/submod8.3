@@ -9,7 +9,8 @@ const CountryFlagList = (props) => {
     <div className="countries-list">
       {props.countries.map(country => <CountryItem country={country}
                                                    key={country.id}
-                                                   deleteCountry={props.deleteCountry}/>)}
+                                                   deleteCountry={props.deleteCountry}
+                                                   addDeletedCountry={props.addDeletedCountry} />)}
     </div>
   );
 };

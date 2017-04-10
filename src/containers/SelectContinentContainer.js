@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import SelectContinent from '../components/SelectContinent';
-import { setContinent } from '../actions';
+import { setContinent } from '../actions/localCountries';
 
 const mapStateToProps = (store) => ({
     filterText: store.selectedContinent

@@ -11,6 +11,15 @@
     margin: 20px auto;
 }
 
+.selected-country-wraper {
+    width: 400px;
+    margin: 20px auto;
+}
+
+.selected-country-wraper img {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.10), 0 10px 10px rgba(0,0,0,0.13);
+}
+
 header {
     position: relative;
     width: 100%;

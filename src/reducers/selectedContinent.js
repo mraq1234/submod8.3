@@ -1,9 +1,8 @@
 import {
   SET_CONTINENT
-} from '../actions';
+} from '../actions/localCountries';
 
 const selectedContinent = (state = 'Afryka', action) => {
-  debugger;
   switch (action.type) {
     case SET_CONTINENT:
       return action.name;

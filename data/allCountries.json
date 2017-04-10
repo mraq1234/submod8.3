@@ -1,0 +1,49 @@
+[{
+  "name": "Rosja",
+  "currency" : "RUB",
+  "populace": "999",
+  "capital": "Moskwa",
+  "continent": "Europa",
+  "imageUrl": "http://flags.fmcdn.net/data/flags/w580/ru.png",
+  "id": "RU"
+}, {
+  "name": "Wenezuela",
+  "currency" : "VEF",
+  "populace": "4.59",
+  "capital": "Caracas",
+  "continent": "Ameryka Płd",
+  "imageUrl": "http://flags.fmcdn.net/data/flags/w580/ve.png",
+  "id": "VE"
+}, {
+  "name": "Kanada",
+  "currency" : "CAD",
+  "populace": "16.8",
+  "capital": "Ottawa",
+  "continent": "Ameryka Płn",
+  "imageUrl": "http://flags.fmcdn.net/data/flags/w580/ca.png",
+  "id": "CA"
+}, {
+  "name": "Egipt",
+  "currency" : "EGP",
+  "populace": "86",
+  "capital": "Kair",
+  "continent": "Afryka",
+  "imageUrl": "http://flags.fmcdn.net/data/flags/w580/eg.png",
+  "id": "EG"
+}, {
+  "name": "Australia",
+  "currency" : "TND",
+  "populace": "10.89",
+  "capital": "Canberra",
+  "continent": "Australia",
+  "imageUrl": "http://flags.fmcdn.net/data/flags/w580/au.png",
+  "id": "AU"
+}, {
+  "name": "Grecja",
+  "currency" : "EUR",
+  "populace": "39.21",
+  "capital": "Ateny",
+  "continent": "Europa",
+  "imageUrl": "http://flags.fmcdn.net/data/flags/w580/gr.png",
+  "id": "GR"
+}]

@@ -1,7 +1,8 @@
 import { connect } from 'react-redux';
-import { deleteCountry } from '../actions';
 import { filterCountries } from '../reducers/countries';
 import ContinentList from '../components/ContinentList';
+import { deleteCountry } from '../actions/localCountries';
+import { addDeletedCountry } from '../actions/allCountries';
 
 const mapStateToProps = function (store) {
   return {
@@ -11,6 +12,7 @@ const mapStateToProps = function (store) {
 
 const mapDispatchToProps = function (dispatch) {
   return {
+    addDeletedCountry: country => dispatch(addDeletedCountry(country)),
     deleteCountry: id => dispatch(deleteCountry(id))
   };
 };

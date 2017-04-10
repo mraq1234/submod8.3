@@ -3,13 +3,18 @@ import {Link} from 'react-router';
 import CountryFlag from './CountryFlag'
 import '../../country.css'
 
-const CountryItem = ({country, deleteCountry}) => (
-  <div className="single-country" key={country.id}>
-    <Link className='logo' to={'countries/country/' + country.id}>
-      <CountryFlag imageUrl={country.imageUrl} />
+const deleteCountryAction = (props) => {
+  props.deleteCountry(props.country.id);
+  props.addDeletedCountry(props.country);
+}
+
+const CountryItem = (props) => (
+  <div className="single-country" key={props.country.id}>
+    <Link className='logo' to={'countries/country/' + props.country.id}>
+      <CountryFlag imageUrl={props.country.imageUrl} />
     </Link>
     <button
-      onClick={ deleteCountry.bind(null, country.id) }>
+      onClick={deleteCountryAction.bind(null, props) }>
       DELETE
     </button>
   </div>
