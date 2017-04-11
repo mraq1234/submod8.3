@@ -7,7 +7,9 @@ const ContinentList = props => {
   return (
     <div>
       <SelectContinent />
-      <CountryFlagList countries={props.countries} deleteCountry={props.deleteCountry} addDeletedCountry={props.addDeletedCountry}/>
+      <CountryFlagList
+        countries={props.countries}
+        deleteCountry={props.deleteCountry} />
     </div>
   )
 };

@@ -1,14 +1,14 @@
 import {
   DELETE_COUNTRY,
   ADD_COUNTRY
-} from '../actions/localCountries';
+} from '../actions/countries';
 
 import initialState from '../../data/localCountries.json';
 
 const countriesReducer = (state = initialState, action) => {
   switch (action.type) {
     case DELETE_COUNTRY:
-      return state.filter(country => country.id !== action.id);
+      return state.filter(country => country.id !== action.country.id);
     case ADD_COUNTRY:
       return  [action.country, ...state];
     default:

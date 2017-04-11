@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import {searchCountries} from '../actions/localCountries'
+import {searchCountries} from '../actions/countries'
 import SearchText from '../components/SearchText'
 
 

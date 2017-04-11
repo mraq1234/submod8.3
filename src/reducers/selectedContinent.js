@@ -1,6 +1,6 @@
 import {
   SET_CONTINENT
-} from '../actions/localCountries';
+} from '../actions/countries';
 
 const selectedContinent = (state = 'Afryka', action) => {
   switch (action.type) {

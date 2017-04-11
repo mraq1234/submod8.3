@@ -4,8 +4,7 @@ import CountryFlag from './CountryFlag'
 import '../../country.css'
 
 const deleteCountryAction = (props) => {
-  props.deleteCountry(props.country.id);
-  props.addDeletedCountry(props.country);
+  props.deleteCountry(props.country);
 }
 
 const CountryItem = (props) => (

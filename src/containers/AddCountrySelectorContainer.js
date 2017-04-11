@@ -1,16 +1,14 @@
 import { connect } from 'react-redux';
 import AddCountrySelector from '../components/AddCountrySelector';
-import { addCountry } from '../actions/localCountries';
-import { removeAddedCountry } from '../actions/allCountries';
+import { addCountry } from '../actions/countries';
 
 const mapStateToProps = (store) => ({
-    countries: store.addCountry
+    countries: store.countriesToAdd
 });
 
 const mapDispatchToProps = function (dispatch) {
   return {
     addCountry: country => dispatch(addCountry(country)),
-    removeAddedCountry: id => dispatch(removeAddedCountry(id))
   };
 };
 

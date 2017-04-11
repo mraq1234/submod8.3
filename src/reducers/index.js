@@ -2,13 +2,13 @@ import { combineReducers } from 'redux';
 import countries  from './countries';
 import selectedContinent from './selectedContinent';
 import searchText from './searchText';
-import addCountry from './addCountry';
+import countriesToAdd from './countriesToAdd';
 
 const reducers = combineReducers({
   countries,
+  countriesToAdd,
   selectedContinent,
-  searchText,
-  addCountry
+  searchText
 });
 
 export default reducers;

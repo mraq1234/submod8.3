@@ -1,6 +1,6 @@
 import {
   SEARCH_COUNTRIES
-} from '../actions/localCountries';
+} from '../actions/countries';
 
 const searchText = (state = '', action) => {
   switch (action.type) {

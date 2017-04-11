@@ -1,15 +1,15 @@
 import {
-  REMOVE_ADDED_COUNTRY,
-  ADD_DELETED_COUNTRY
-} from '../actions/allCountries';
+  ADD_COUNTRY,
+  DELETE_COUNTRY
+} from '../actions/countries';
 
 import initialState from '../../data/allCountries.json';
 
 const addCountry = (state = initialState, action) => {
   switch (action.type) {
-    case REMOVE_ADDED_COUNTRY:
-      return state.filter(country => country.id !== action.id);
-    case ADD_DELETED_COUNTRY:
+    case ADD_COUNTRY:
+      return state.filter(country => country.id !== action.country.id);
+    case DELETE_COUNTRY:
       return [action.country, ...state];
     default:
       return state;
