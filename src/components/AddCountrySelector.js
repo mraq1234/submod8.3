@@ -5,9 +5,12 @@ import '../country.css';
 class AddCountrySelector extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            selectedCountry: this.props.countries[0]
-        };
+        if (props.countries.length) {
+            this.state = {
+                selectedCountry: this.props.countries[0],
+                activeFlagImg: this.props.countries[0].imageUrl
+            };
+        }
         this.selectChangeHandler = this.selectChangeHandler.bind(this);
         this.addCountryClickHandler = this.addCountryClickHandler.bind(this);
     }
@@ -19,7 +22,8 @@ class AddCountrySelector extends Component {
     selectChangeHandler(e) {
         const id = e.target.value;
         const selectedCountry = this.props.countries.find(country => country.id === id);
-        this.setState({selectedCountry});
+        this.setState({ selectedCountry,
+                        activeFlagImg: selectedCountry.imageUrl });
     }
 
     addCountryClickHandler() {
@@ -36,6 +40,7 @@ class AddCountrySelector extends Component {
           key={country.id}
           value={country.id}>
           {country.name}
+          
         </option>);
     }
 

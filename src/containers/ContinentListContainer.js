@@ -5,7 +5,8 @@ import { deleteCountry } from '../actions/countries';
 
 const mapStateToProps = function (store) {
   return {
-    countries: filterCountries(store.countries, "continent", store.selectedContinent)
+    countries: filterCountries(store.countries, "continent", store.selectedContinent),
+    countriesToAddCount: store.countriesToAdd.length,
   };
 };
 

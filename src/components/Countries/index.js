@@ -5,6 +5,7 @@ import CountryFlagList from '../../containers/CountryFlagListContainer';
 const Countries = props => (
     <div>
         <SearchText />
+        <br />
         <CountryFlagList />
     </div>
 )

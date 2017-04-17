@@ -6,6 +6,7 @@ import { deleteCountry } from '../actions/countries';
 const mapStateToProps = function (store) {
   return {
     countries: filterCountries(store.countries, "name", store.searchText),
+    countriesToAddCount: store.countriesToAdd.length,
   };
 };
 
